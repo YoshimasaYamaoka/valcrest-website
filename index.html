@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Valcrest — 原価率50%の透明性と、AIが生み出す計算された美しさ。28〜38歳の専門職女性のためのD2Cジュエリーブランド。">
+  <meta property="og:title" content="Valcrest | Calculated Beauty. Honest Price.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1200">
+  <title>Valcrest | Calculated Beauty. Honest Price.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Page Transition -->
+  <div id="page-transition"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="images/valcrest.png" alt="Valcrest">
+    </a>
+    <div class="nav-links">
+      <a href="service.html">Our Service</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="hamburger" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-overlay">
+    <a href="index.html" class="active">Home</a>
+    <a href="service.html">Our Service</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Section 1: Hero (100vh / 左右2分割) -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="label fade-in-up">VALCREST</p>
+        <h1 class="heading-xl fade-in-up" data-delay="0.1">Calculated<br>Beauty.</h1>
+        <p class="label-sm fade-in-up" data-delay="0.2">HONEST PRICE. REAL VALUE.</p>
+        <span class="gold-line fade-in-up" data-delay="0.3"></span>
+        <a href="service.html" class="btn btn-black fade-in-up" data-delay="0.4">EXPLORE COLLECTION →</a>
+      </div>
+      <div class="hero-image">
+        <!-- REPLACE: ヒーロー -->
+        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1920&q=85" alt="" loading="eager" fetchpriority="high">
+      </div>
+    </section>
+
+    <!-- Section 2: Brand Statement (黒背景) -->
+    <section class="section section-dark brand-statement">
+      <div class="brand-statement-watermark">50</div>
+      <div class="brand-statement-content">
+        <h2 class="heading-md text-white fade-in-up" style="font-style:italic;">"素材への投資が、<br>　唯一の差別化です。"</h2>
+        <p class="body-text fade-in-up" data-delay="0.2" style="margin-top:40px;">
+          私たちは原価率50%を公開します。<br>
+          百貨店マージンではなく、K18の地金重量と<br>
+          ダイヤモンドのグレードに、あなたのお金が使われます。
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3: Product Highlight (白背景 / CSS Grid) -->
+    <section class="section product-highlight">
+      <div class="product-grid">
+        <div class="product-grid-img-tall fade-in-left">
+          <!-- REPLACE: ジュエリー1（縦） -->
+          <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=1200&q=85" alt="Valcrest ジュエリーコレクション" loading="lazy">
+        </div>
+        <div class="product-grid-img-square fade-in-right">
+          <!-- REPLACE: ジュエリー2（正） -->
+          <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=85" alt="Valcrest ジュエリー" loading="lazy">
+        </div>
+        <div class="product-grid-text fade-in-right" data-delay="0.2">
+          <img src="images/avelia_combined.png" alt="Avelia - Jewels for your journey" class="avelia-badge" loading="lazy">
+          <p class="label" style="margin-top:24px;">NEW COLLECTION</p>
+          <h2 class="heading-sm" style="margin-top:16px;">Geometric<br>Layered</h2>
+          <p class="body-text-sm" style="margin-top:24px;">建築的な幾何学デザイン。重ねて楽しむ、K18ゴールド。</p>
+          <a href="#" class="link-gold" style="margin-top:24px;">VIEW →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Three Values (白背景 / ゴールドラインで上下を囲む) -->
+    <section class="section values">
+      <div class="values-border-top"></div>
+      <div class="values-grid">
+        <div class="values-item fade-in-up">
+          <svg class="values-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="0.8">
+            <circle cx="24" cy="24" r="20"/>
+            <line x1="24" y1="4" x2="24" y2="44"/>
+            <line x1="4" y1="24" x2="44" y2="24"/>
+          </svg>
+          <h3 style="font-family:var(--font-heading);font-size:20px;font-style:italic;margin-top:24px;">透明性</h3>
+          <p class="body-text-sm" style="margin-top:16px;text-align:center;">原価率50%を<br>公開する<br>誠実なラグジュアリー</p>
+        </div>
+        <div class="values-item fade-in-up" data-delay="0.15">
+          <svg class="values-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="0.8">
+            <polygon points="24,2 46,38 2,38"/>
+            <line x1="24" y1="2" x2="24" y2="38"/>
+          </svg>
+          <h3 style="font-family:var(--font-heading);font-size:20px;font-style:italic;margin-top:24px;">精密さ</h3>
+          <p class="body-text-sm" style="margin-top:16px;text-align:center;">AIと職人の<br>協業による<br>0.1mmの追求</p>
+        </div>
+        <div class="values-item fade-in-up" data-delay="0.3">
+          <svg class="values-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="0.8">
+            <rect x="4" y="4" width="40" height="40"/>
+            <rect x="12" y="12" width="24" height="24"/>
+            <rect x="20" y="20" width="8" height="8"/>
+          </svg>
+          <h3 style="font-family:var(--font-heading);font-size:20px;font-style:italic;margin-top:24px;">持続性</h3>
+          <p class="body-text-sm" style="margin-top:16px;text-align:center;">流行ではなく、<br>世代を超える<br>デザイン</p>
+        </div>
+      </div>
+      <div class="values-border-bottom"></div>
+    </section>
+
+    <!-- Section 5: Gallery Strip (白背景 / 水平スクロール) -->
+    <section class="section gallery-strip">
+      <p class="label fade-in-up" style="margin-bottom:40px;">Works</p>
+      <div class="gallery-scroll">
+        <!-- REPLACE: ジュエリー1（縦） -->
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=800&q=85" alt="Valcrest works" loading="lazy"></div>
+        <!-- REPLACE: ジュエリー2（正） -->
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&q=85" alt="Valcrest works" loading="lazy"></div>
+        <!-- REPLACE: ジュエリー3（正） -->
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=85" alt="Valcrest works" loading="lazy"></div>
+        <!-- REPLACE: ジュエリー4（横） -->
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=85" alt="Valcrest works" loading="lazy"></div>
+        <!-- REPLACE: ヒーロー -->
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=85" alt="Valcrest works" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- Section 6: CTA (黒背景) -->
+    <section class="section section-dark cta-section">
+      <div class="text-center">
+        <img src="images/avelia_combined.png" alt="Avelia - Jewels for your journey" class="avelia-cta-logo fade-in-up" loading="lazy">
+        <h2 class="heading-lg text-white fade-in-up" style="font-style:italic;margin-top:40px;">"知的な美しさのための<br>　ジュエリー"</h2>
+        <p class="body-text fade-in-up" data-delay="0.2" style="margin-top:32px;">2026年秋 グランドオープン予定</p>
+        <div class="cta-buttons fade-in-up" data-delay="0.3">
+          <a href="service.html" class="btn btn-outline-white">OUR SERVICE</a>
+          <a href="contact.html" class="btn btn-black" style="background:var(--white);color:var(--black);">CONTACT</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">
+        <img src="images/valcrest.png" alt="Valcrest">
+      </a>
+      <div class="footer-links">
+        <a href="service.html">Our Service</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/valcrest_jp/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <a href="https://x.com/valcrest_jp" target="_blank" rel="noopener noreferrer" aria-label="X">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+    <p class="footer-copyright">&copy; 2026 Valcrest Inc. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
