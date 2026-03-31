@@ -151,8 +151,29 @@ function initContactForm() {
     }
 
     if (isValid) {
-      form.style.display = 'none';
-      document.getElementById('form-success').style.display = 'block';
+      const formData = new FormData(form);
+      const submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+      submitBtn.textContent = '送信中...';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      }).then((response) => {
+        if (response.ok) {
+          form.style.display = 'none';
+          document.getElementById('form-success').style.display = 'block';
+        } else {
+          submitBtn.disabled = false;
+          submitBtn.textContent = '送信する →';
+          alert('送信に失敗しました。もう一度お試しください。');
+        }
+      }).catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = '送信する →';
+        alert('通信エラーが発生しました。もう一度お試しください。');
+      });
     }
   });
 
