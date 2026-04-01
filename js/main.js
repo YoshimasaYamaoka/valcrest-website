@@ -65,6 +65,16 @@ function initHamburger() {
     document.body.style.overflow = overlay.classList.contains('open') ? 'hidden' : '';
   });
 
+  // Close button
+  const closeBtn = overlay.querySelector('.nav-overlay-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  }
+
   overlay.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('open');
