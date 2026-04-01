@@ -234,14 +234,14 @@ h1, h2, h3, h4 {
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 2px 5vw;
+  padding: 0 5vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: var(--white);
   border-bottom: 1px solid transparent;
   transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
-  height: 56px;
+  height: 52px;
 }
 
 .nav.scrolled {
@@ -263,8 +263,8 @@ h1, h2, h3, h4 {
 
 .nav-logo img {
   display: block;
-  height: 36px;
-  width: 180px;
+  height: 26px;
+  width: 130px;
   object-fit: cover;
   object-position: center 18%;
 }
@@ -309,7 +309,7 @@ h1, h2, h3, h4 {
   width: 32px;
   height: 32px;
   position: relative;
-  z-index: 1002;
+  z-index: 1100;
 }
 
 .hamburger span {
@@ -406,7 +406,7 @@ h1, h2, h3, h4 {
 }
 
 .avelia-service-logo {
-  width: 160px;
+  width: 220px;
   height: auto;
   border-radius: 8px;
   margin-top: 24px;
@@ -508,6 +508,25 @@ h1, h2, h3, h4 {
   font-weight: 300;
   font-size: 12px;
   color: var(--gray-mid);
+}
+
+/* --- Avelia Intro Section --- */
+.avelia-intro {
+  padding: 80px 5vw;
+  background: var(--off-white);
+}
+
+.avelia-intro-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avelia-intro-logo {
+  width: 200px;
+  height: auto;
 }
 
 /* --- Custom Cursor (disabled) --- */
@@ -1088,8 +1107,9 @@ h1, h2, h3, h4 {
 /* --- Contact Page --- */
 .contact-row {
   display: flex;
-  gap: 80px;
-  max-width: 1200px;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -1352,12 +1372,16 @@ h1, h2, h3, h4 {
   }
 
   .page-hero-fullimage img {
-    height: 50vh;
+    height: 60vh;
   }
 
   .page-hero-overlay-text {
-    bottom: 40px;
+    bottom: 30px;
     left: 7vw;
+  }
+
+  .page-hero-overlay-text .heading-xl {
+    font-size: 48px;
   }
 
   .page-hero-simple {
@@ -1401,8 +1425,4 @@ h1, h2, h3, h4 {
   }
 
   /* Contact mobile */
-  .contact-row {
-    flex-direction: column;
-    gap: 60px;
-  }
 }
