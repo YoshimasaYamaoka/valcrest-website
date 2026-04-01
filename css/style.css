@@ -523,21 +523,10 @@ h1, h2, h3, h4 {
 
 /* --- Avelia Intro Section --- */
 .avelia-intro {
-  padding: 0;
-  background: #540c19;
+  padding: 120px 5vw;
+  background: #540c19 url('../images/avelia_bg.jpg') center center / cover no-repeat;
   text-align: center;
   position: relative;
-  overflow: hidden;
-}
-
-.avelia-intro-bg {
-  width: 100%;
-  display: block;
-}
-
-.avelia-intro-content {
-  padding: 0 5vw 100px;
-  background: #540c19 url('../images/avelia_bg.jpg') center center / cover no-repeat;
 }
 
 .avelia-intro-inner {
@@ -549,7 +538,8 @@ h1, h2, h3, h4 {
 }
 
 .avelia-intro-logo {
-  display: none;
+  width: min(60vw, 280px);
+  height: auto;
 }
 
 .avelia-intro-heading {
