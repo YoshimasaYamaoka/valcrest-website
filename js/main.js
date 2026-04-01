@@ -163,6 +163,16 @@ function initPageTransitions() {
   const transition = document.getElementById('page-transition');
   if (!transition) return;
 
+  // Reset on back/forward navigation (bfcache)
+  window.addEventListener('pageshow', (e) => {
+    if (e.persisted) {
+      transition.classList.remove('active');
+    }
+  });
+
+  // Also reset immediately on load
+  transition.classList.remove('active');
+
   const internalLinks = document.querySelectorAll('a[href]');
   internalLinks.forEach((link) => {
     const href = link.getAttribute('href');

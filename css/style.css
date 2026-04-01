@@ -523,12 +523,13 @@ h1, h2, h3, h4 {
 
 /* --- Avelia Intro Section --- */
 .avelia-intro {
-  padding: 80px 5vw;
-  background: var(--off-white);
+  padding: 120px 5vw;
+  background: #3E0E1A;
+  text-align: center;
 }
 
 .avelia-intro-inner {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -536,8 +537,48 @@ h1, h2, h3, h4 {
 }
 
 .avelia-intro-logo {
-  width: 200px;
+  width: 240px;
   height: auto;
+}
+
+.avelia-intro-heading {
+  color: var(--white);
+  font-style: italic;
+  margin-top: 48px;
+}
+
+.avelia-intro-text {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 24px;
+  letter-spacing: 0.1em;
+}
+
+.avelia-intro .btn-white {
+  background: var(--white);
+  color: #3E0E1A;
+  border: 1px solid var(--white);
+}
+
+.avelia-intro .btn-white:hover {
+  background: transparent;
+  color: var(--white);
+}
+
+.avelia-intro .btn-outline-white {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: var(--white);
+}
+
+.avelia-intro .btn-outline-white:hover {
+  background: var(--white);
+  color: #3E0E1A;
+}
+
+.avelia-intro .cta-buttons {
+  margin-top: 40px;
 }
 
 /* --- Custom Cursor (disabled) --- */
