@@ -1281,6 +1281,11 @@ h1, h2, h3, h4 {
     display: flex;
   }
 
+  .nav-logo img {
+    height: 18px;
+    width: 91px;
+  }
+
   .footer-inner {
     flex-direction: column;
     gap: 30px;
