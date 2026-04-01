@@ -524,8 +524,9 @@ h1, h2, h3, h4 {
 /* --- Avelia Intro Section --- */
 .avelia-intro {
   padding: 120px 5vw;
-  background: #3E0E1A;
+  background: #3E0E1A url('../images/avelia_bg.jpg') center center / cover no-repeat;
   text-align: center;
+  position: relative;
 }
 
 .avelia-intro-inner {
@@ -537,8 +538,10 @@ h1, h2, h3, h4 {
 }
 
 .avelia-intro-logo {
-  width: 240px;
+  width: min(70vw, 360px);
   height: auto;
+  -webkit-mask-image: radial-gradient(ellipse 85% 80% at center, black 40%, transparent 72%);
+  mask-image: radial-gradient(ellipse 85% 80% at center, black 40%, transparent 72%);
 }
 
 .avelia-intro-heading {
